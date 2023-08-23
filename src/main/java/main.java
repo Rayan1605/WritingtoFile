@@ -9,6 +9,8 @@ public class main {
         String content = "Details to write";
         try{
             FileWriter myWriter = new FileWriter(myfile);
+ //To append, just add true
+   FileWriter SecondWriter = new FileWriter(myfile, true);
             myWriter.write("ggg");
             myWriter.close();
         }catch (IOException e) {
